@@ -52,8 +52,7 @@ int senha, senha_nova;
 
 
 // Global copy of client
-
-uint8_t peerAddress[] = {0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF};
+uint8_t peerAddress[] = {0x3E, 0x71, 0xBF, 0x32, 0x71, 0x8C};
 #define CHANNEL 1
 #define PRINTSCANRESULTS 0
 #define DELETEBEFOREPAIR 0
@@ -155,7 +154,7 @@ while (ok != 1) {
   Serial.println(tecla);
   tecla = 'X';
   senha_nova = 10 * dez + uni;
-  Serial.print("Aceita: A, Cancela: C\n");
+  Serial.println("Aceita: A, Cancela: C");
   while (1) {
     tecla = teclado1.getKey();
     yield();
