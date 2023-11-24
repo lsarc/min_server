@@ -171,9 +171,6 @@ while (ok != 1) {
 }
   
 }
-  
-
-int teste = 1024;
 
 void loop() {
   // In the loop we scan for client
