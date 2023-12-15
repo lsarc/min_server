@@ -80,6 +80,7 @@ void sendData() {
   Serial.print("Byte 1: "); Serial.println(data[1]);
   Serial.print("Byte 0: "); Serial.println(data[0]);
   int result = esp_now_send(peerAddress, (uint8_t *)data, sizeof(data));
+  esp_now_send(peerAddress2, (uint8_t *)data, sizeof(data));
   Serial.println("Send Status: ");
   if (result == 0) {
     Serial.println("Success");
