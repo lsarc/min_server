@@ -52,7 +52,7 @@ int senha, senha_nova;
 
 
 // Global copy of client
-uint8_t peerAddress[] = {0x3E, 0x71, 0xBF, 0x32, 0x71, 0x8C};
+uint8_t peerAddress[] = {0xCE, 0x50, 0xE3, 0x1C, 0x27, 0x61};
 #define CHANNEL 1
 #define PRINTSCANRESULTS 0
 #define DELETEBEFOREPAIR 0
