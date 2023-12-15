@@ -53,6 +53,7 @@ int senha, senha_nova;
 
 // Global copy of client
 uint8_t peerAddress[] = {0xCE, 0x50, 0xE3, 0x1C, 0x27, 0x61};
+uint8_t peerAddress2[] = {0xC6, 0x5B, 0xBE, 0x48, 0xAF, 0x68};
 #define CHANNEL 1
 #define PRINTSCANRESULTS 0
 #define DELETEBEFOREPAIR 0
@@ -116,6 +117,7 @@ void setup() {
   esp_now_set_self_role(ESP_NOW_ROLE_CONTROLLER);
   esp_now_register_send_cb(OnDataSent);
   esp_now_add_peer(peerAddress, ESP_NOW_ROLE_SLAVE, 1, NULL, 0);
+  esp_now_add_peer(peerAddress2, ESP_NOW_ROLE_SLAVE, 1, NULL, 0);
 }
 
 int atoi(char tecla) {
